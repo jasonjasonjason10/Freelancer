@@ -45,7 +45,7 @@ function renderFreeLance() {
   const availableElement = available.map((lancer) => {
     let freelanceElement = document.createElement("div");
     freelanceElement.classList.add("box");
-    freelanceElement.textContent = `${lancer.name}  $${lancer.price}  ${lancer.occupation}`;
+    freelanceElement.textContent = `Name:${lancer.name}.   $${lancer.price} Tittle:${lancer.occupation}`;
     return freelanceElement;
   });
   freelance.replaceChildren(...availableElement);
